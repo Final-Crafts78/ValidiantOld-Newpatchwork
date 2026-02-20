@@ -1,0 +1,13 @@
+{
+  "name": "@validiant/config",
+  "version": "1.0.0",
+  "description": "Shared ESLint and TypeScript configurations",
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  }
+}
