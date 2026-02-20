@@ -1,0 +1,58 @@
+{
+  "name": "validiant-tracker-modernised",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Validiant Tracker — all features from the monolith, re-architected with Hono + Drizzle + TypeScript pnpm monorepo",
+  "packageManager": "pnpm@10.29.3",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean && rm -rf node_modules .turbo",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "api:dev": "pnpm --filter @validiant/api dev",
+    "api:build": "pnpm --filter @validiant/api build",
+    "api:start": "pnpm --filter @validiant/api start",
+    "api:db:generate": "pnpm --filter @validiant/api db:generate",
+    "api:db:push": "pnpm --filter @validiant/api db:push",
+    "api:db:migrate": "pnpm --filter @validiant/api db:migrate",
+    "api:db:studio": "pnpm --filter @validiant/api db:studio"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.4",
+    "turbo": "^1.12.4",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "keywords": [
+    "monorepo",
+    "task-management",
+    "employee-tracker",
+    "hono",
+    "drizzle",
+    "typescript",
+    "pnpm"
+  ],
+  "author": "Validiant Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Final-Crafts78/ValidiantOld-Newpatchwork.git"
+  }
+}
